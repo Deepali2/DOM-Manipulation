@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>color toggler</title>
+    <style>
+      button {
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        border-color: "#96938e";
+      }
+      .purple {
+        background : purple;
+      }
+    </style>
+  </head>
+  <body>
+    <button >Click Me</button>
+    <script type="text/javascript">  
+      let button = document.querySelector("button");
+      button.addEventListener("click", myFunction);
+
+      function myFunction() {
+        document.body.classList.toggle("purple");  
+      }   
+          
+    </script>
+  </body>
+</html>
